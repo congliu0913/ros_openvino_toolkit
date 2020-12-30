@@ -35,22 +35,22 @@ jobs:
         sudo apt update
         sudo apt-cache search openvino
         sudo apt-get install -y \
-          intel-openvino-runtime-ubuntu18-2020.3.194 \
-          intel-openvino-ie-samples-2020.3.194 \
-          intel-openvino-omz-dev-2020.3.194 \
-          intel-openvino-omz-tools-2020.3.194
-          intel-openvino-gstreamer-rt-ubuntu-bionic-2020.3.194 \
-          intel-openvino-gva-dev-ubuntu-bionic-2020.3.194 \
-          intel-openvino-gva-rt-ubuntu-bionic-2020.3.194 \
-          intel-openvino-ie-bin-python-tools-ubuntu-bionic-2020.3.194 \
-          intel-openvino-ie-rt-core-ubuntu-bionic-2020.3.194 \
-          intel-openvino-ie-rt-cpu-ubuntu-bionic-2020.3.194 \
-          intel-openvino-ie-rt-gna-ubuntu-bionic-2020.3.194 \
-          intel-openvino-ie-rt-gpu-ubuntu-bionic-2020.3.194 \
-          intel-openvino-ie-rt-hddl-ubuntu-bionic-2020.3.194 \
-          intel-openvino-ie-rt-vpu-ubuntu-bionic-2020.3.194 \
-          intel-openvino-ie-sdk-ubuntu-bionic-2020.3.194 \
-          intel-openvino-opencv-lib-ubuntu-bionic-2020.3.194
+          intel-openvino-runtime-ubuntu18-2020.3.341 \
+          intel-openvino-ie-samples-2020.3.341 \
+          intel-openvino-omz-dev-2020.3.341 \
+          intel-openvino-omz-tools-2020.3.341 \
+          intel-openvino-gstreamer-rt-ubuntu-bionic-2020.3.341 \
+          intel-openvino-gva-dev-ubuntu-bionic-2020.3.341 \
+          intel-openvino-gva-rt-ubuntu-bionic-2020.3.341 \
+          intel-openvino-ie-bin-python-tools-ubuntu-bionic-2020.3.341 \
+          intel-openvino-ie-rt-core-ubuntu-bionic-2020.3.341 \
+          intel-openvino-ie-rt-cpu-ubuntu-bionic-2020.3.341 \
+          intel-openvino-ie-rt-gna-ubuntu-bionic-2020.3.341 \
+          intel-openvino-ie-rt-gpu-ubuntu-bionic-2020.3.341 \
+          intel-openvino-ie-rt-hddl-ubuntu-bionic-2020.3.341 \
+          intel-openvino-ie-rt-vpu-ubuntu-bionic-2020.3.341 \
+          intel-openvino-ie-sdk-ubuntu-bionic-2020.3.341 \
+          intel-openvino-opencv-lib-ubuntu-bionic-2020.3.341
         sudo apt-get install -y libgflags-dev
         ls -lh /opt/intel/openvino
         source /opt/intel/openvino/bin/setupvars.sh
@@ -65,7 +65,7 @@ jobs:
         cd ~/catkin_ws/
         source /opt/ros/melodic/setup.bash
         source /opt/intel/openvino/bin/setupvars.sh
-        export CPU_EXTENSION_LIB+=/opt/intel/openvino_2020.3.194/deployment_tools/inference_engine/lib/intel64/libinference_engine.so
+        export CPU_EXTENSION_LIB+=/opt/intel/openvino_2020.3.341/deployment_tools/inference_engine/lib/intel64/libinference_engine.so
         export GFLAGS_LIB+=/usr/lib/x86_64-linux-gnu/libgflags_nothreads.a
         env
         catkin_make
